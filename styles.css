@@ -1,0 +1,67 @@
+div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin-top: 5%;
+    border: 2px solid rgb(25, 105, 197);
+    padding: 3%;
+    border-radius: 10%;
+}
+
+input {
+    margin-top: 5%;
+    width: 70%;
+    padding: 10px;
+    height: max-content;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.invalidField {
+    margin-top: 5%;
+    width: 70%;
+    padding: 10px;
+    height: max-content;
+    border: 3px solid rgb(253, 0, 0);
+}
+
+.validField {
+    margin-top: 5%;
+    width: 70%;
+    padding: 10px;
+    height: max-content;
+    border: 3px solid rgb(28, 240, 38);
+}
+
+button {
+    width: 100px;
+    margin-top: 10%;
+}
+
+.password_validation_div {
+    display: flex;
+    flex-direction: row;
+}
+
+.valid_box {
+    border-radius: 30px;
+    border: 2px solid #73AD21;
+    margin-left: 15px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.invalid_box {
+    border-radius: 30px;
+    border: 2px solid #ec3838;
+    margin-left: 15px;
+    height: fit-content;
+    width: fit-content;
+}
