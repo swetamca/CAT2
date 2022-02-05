@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<christ>
+    <computer-science>
+        <stu-name>Adhokshaj</stu-name>
+        <stu-university>Christ</stu-university>
+        <stu-phone>7987987987</stu-phone>
+        <stu-email>adhokshaj@christuniversity.in</stu-email>
+    </computer-science>
+    <computer-science>
+        <stu-name>Sharath</stu-name>
+        <stu-university>Karnataka</stu-university>
+        <stu-phone>68621826876</stu-phone>
+        <stu-email>checkmail@.com</stu-email>
+    </computer-science>
+    <computer-science>
+        <stu-name>Ramesh</stu-name>
+        <stu-university>Bengaluru</stu-university>
+        <stu-phone>977687687</stu-phone>
+        <stu-email>uihuhdf</stu-email>
+    </computer-science>
+</christ>
