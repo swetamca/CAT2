@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/TR/xhtml1" xml:lang="en" lang="en">
+   <head>
+      <title>Christ (Deemed to be University)</title>
+      <style>
+        *{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+          body{
+            background-image: url('christ-university.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            /* backdrop-filter: blur(4x);     */
+            /* backdrop-filter: grayscale(100%);            */
+          }
+          header{
+    margin-top: -10px;
+    width: 1367px;
+    height: 70px;
+    display: flex;
+    background-color: white;
+    /* opacity: 0.9; */
+    z-index: 5;
+    border: none;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: -10px;
+    }
+          .container{                   
+        /* position:absolute; */
+        border-radius: 10px;       
+        left: 50%;
+        transform: translate(90%, 20%);
+        opacity: 0.9;
+        box-sizing: content-box; 
+        min-height: 400px;
+        height: auto;
+        width: 500px;
+        padding-bottom:30px;
+        background-color:#0b3f64;
+          }
+          .input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 370px;
+    font-size: medium;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background-color:white;
+    color: black;
+    padding: 10px;
+}
+button{
+    margin-left: 32%;
+    align-content: center;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #ff6600;    
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+nav a{
+    text-decoration: none;        
+    color: #0b3f64;
+    padding: 25px;
+    display: inline-block;
+     }
+button:hover{
+    cursor: pointer;
+    background-color: red;
+
+}
+      </style>
+   </head>
+	
+   <body>
+    <header>
+      <img style="padding-left: 5px;padding: 10px;" src="logo.jpg">        
+      <nav class="navi" style="text-decoration:none;">
+          <!-- <a href="Login.html">Login</a> -->
+      </nav>
+     
+  </header>
+    <div class="container">
+    <form  action="" style="color: white;margin-left:13%;" onsubmit="return validation()"><br><br><br>
+        <label style="color: white;margin-left:27%;font-size: 25px;">WELCOME </label>
+        <br><br><br><br>
+        
+        <input class="input" type="email" id="useremail"  placeholder="Email" ><br><br>
+
+        <input class="input" type="password" id="psw"  placeholder="Password" ><br><br><br>
+        <a href="index.html" style="color: white;text-decoration: none;font-size: 15px;"> Register Now!</a>
+                     
+
+        <button title="Submit" >Login</button>
+
+        
+       </form>
+    </div>
+   </body>
+</html>
+<script>
+ 
+  var memail=document.getElementById('useremail');
+  var mpassword=document.getElementById('psw');
+
+
+  function validation()
+  {
+      if (memail.value=="" && mpassword.value==""){          
+          memail.style.border="solid 2px red";
+          mpassword.style.border="solid 2px red";
+          return false;
+      }
+      
+
+      if (memail.value==""){
+          memail.style.border="solid 2px red";
+          return false;
+      }
+     if (mpassword.value==""){
+          mpassword.style.border="solid 2px red";
+          return false;
+      }
+      memail.style.border="solid 1px white";
+      mpassword.style.border="solid 1px white";
+      
+  }
+  memail.onkeydown=function()
+    {
+      const validemail=/^([a-z0-9\.-]+)@([A-z]+)(university)\.([a-z]{1,3})$/;
+      
+      
+       if(validemail.test(memail.value))
+       {
+        memail.style.border="solid 1px white"; 
+       }
+       else{
+        memail.style.border="solid 2px red";
+       }
+    }
+    mpassword.onkeydown=function()
+    {
+      if(mpassword.value!="")
+       {
+        mpassword.style.border="solid 1px white"; 
+       }
+       else{
+        mpassword.style.border="solid 2px red";
+       }
+    }
+   
+</script>
